@@ -1,0 +1,35 @@
+{
+  "name": "attendance-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "node scripts/check-deploy.js && npm run build && wrangler deploy",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "db:remote": "node scripts/check-deploy.js && wrangler d1 migrations apply DB --remote",
+    "test": "node --test tests/*.test.js",
+    "setup:key": "node scripts/setup-key.js",
+    "benchmark": "node scripts/benchmark-history.js",
+    "check": "node scripts/check.js",
+    "examples": "node scripts/generate-examples.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "wrangler": "^4.149.0"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.3.289",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "description": "Self-hosted attendance management for courses, groups, and instructors.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRL-creator/attendance-workspace.git"
+  }
+}

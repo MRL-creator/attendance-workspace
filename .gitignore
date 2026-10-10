@@ -1,0 +1,13 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env*
+!.env.example
+dist/
+coverage/
+public/build/
+public/vendor/
+
+.dev.vars.*
+.test-artifacts/
+*.log
