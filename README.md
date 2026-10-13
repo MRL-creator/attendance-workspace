@@ -7,6 +7,8 @@ Each installation has its **own database, workspace name, and owner account**. O
 [![CI](https://github.com/MRL-creator/attendance-workspace/actions/workflows/ci.yml/badge.svg)](https://github.com/MRL-creator/attendance-workspace/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+[Read the project case study](docs/case-study.md) · problem, implementation decisions, and measured results.
+
 ![Attendance dashboard with synthetic example data](docs/images/dashboard.png)
 
 ## Features
